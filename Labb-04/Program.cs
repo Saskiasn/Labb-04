@@ -43,7 +43,8 @@ class Program
                     break;
                 case "2":
                     Console.WriteLine("Här kommer vi visa alla personer!");
-                    // Kommer implementeras senare i ListPersons-metoden
+                    Console.WriteLine("---------------------------------");
+                    ListPersons();
                     break;
                 case "3":
                     Console.WriteLine("Avslutar programmet...");
@@ -114,7 +115,23 @@ class Program
             Console.WriteLine("Försök igen.");
         }
     }
-}
+
+    static void ListPersons()
+    {
+        if (personer.Count == 0)
+        {
+            Console.WriteLine("Det finns inga personer i listan.");
+        }
+        else
+        {
+            foreach (Person person in personer)
+            {
+                Console.WriteLine(person.ToString());
+            }
+        }
+    }
+}      
+
 
 
 

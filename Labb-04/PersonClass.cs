@@ -54,7 +54,7 @@ namespace Labb_04
                    $"Kön: {Gender}\n" +
                    $"Hår: {Hair}\n" +
                    $"Födelsedag: {Birthday:yyyy-MM-dd}\n" +
-                   $"Ögonfärg: {Eyecolor}";
+                   $"Ögonfärg: {Eyecolor}\n";
         }
     }
 }
