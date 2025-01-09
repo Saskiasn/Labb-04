@@ -13,8 +13,8 @@ namespace Labb_04
 
     public struct Hair
     {
-        public string HairLenght { get; set; }
-        public string HairColor { get; set; }
+        public string HairLenght { get; private set; }
+        public string HairColor { get; private set; }
 
         public Hair(string hairlenght, string haircolor)
         {
